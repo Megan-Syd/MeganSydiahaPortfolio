@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap");
+
+.patua-one-regular {
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.taviraj-thin {
+  font-family: "Taviraj", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.taviraj-extralight {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.taviraj-light {
+  font-family: "Taviraj", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.taviraj-regular {
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.taviraj-medium {
+  font-family: "Taviraj", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.taviraj-semibold {
+  font-family: "Taviraj", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.taviraj-bold {
+  font-family: "Taviraj", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.taviraj-extrabold {
+  font-family: "Taviraj", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.taviraj-black {
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.taviraj-thin-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.taviraj-extralight-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.taviraj-light-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.taviraj-regular-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.taviraj-medium-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.taviraj-semibold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.taviraj-bold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.taviraj-extrabold-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.taviraj-black-italic {
+  font-family: "Taviraj", serif;
+  font-weight: 900;
+  font-style: italic;
+}

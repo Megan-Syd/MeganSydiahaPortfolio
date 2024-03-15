@@ -1,0 +1,89 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #faeee7;
+  /* border-color: #da879c;
+  border-width: 5px; */
+  font-family: "Taviraj", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* text-align: center; */
+}
+
+.accent-color-1 {
+  color: #6b8093;
+}
+
+.accent-color-2 {
+  color: #da879c;
+}
+
+.zoom-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.15);
+}
+
+.header {
+  background-color: #faeee7;
+  border-style: dashed;
+  border-width: medium;
+  border-color: #da879c;
+  border-radius: 5px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.circular-image-container {
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
+  overflow: hidden;
+  border-radius: 50%; /*This will make the container circular */
+  position: relative;
+  border-color: #da879c;
+  border-width: medium;
+  border-style: solid;
+}
+
+.circular-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+.section-box {
+  background-color: white;
+  border-style: solid;
+  border-width: medium;
+  border-color: #da879c;
+  border-radius: 7px;
+}
+
+h2 {
+  text-decoration: underline #da879c;
+  text-underline-offset: 4px;
+}
+
+div a {
+  color: #6b8093;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #da879c;
+}
+
+.main-title:hover {
+  color: #da879c;
+}
