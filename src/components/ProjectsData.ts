@@ -22,7 +22,7 @@ const projectsData = [
         "This app was a first foray into building a more complex app with the use of Laravel. I love the process of creating database schemas, and I love front-end design, so this project was especially fun. As it was built earlier on, it doesn't have all the functionalities that I dreamed of including, but as I progress in my learning I am excited to delve further into the possibilities of this interesting framework.",
       technologies: "Laravel, Bootstrap, XAMPP",
       link: "https://github.com/Megan-Syd/PhpBlogProgram.git",
-      image: "/assets/project_images/php-blog-1.PNG",
+      image: "/assets/project_images/php-blog-1.png",
     },
   // Add more projects as needed
 ];
