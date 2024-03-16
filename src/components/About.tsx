@@ -2,27 +2,27 @@ import React, { useEffect, useState } from "react";
 import HeadshotImg from "../assets/casual-headshot.png";
 
 const About: React.FC = () => {
-  //   const [fileContent, setFileContent] = useState<string>("");
+  const [fileContent, setFileContent] = useState<string>("");
 
-  //   useEffect(() => {
-  //     fetch("src/assets/about-me.txt")
-  //       .then((response) => response.text())
-  //       .then((text) => setFileContent(text))
-  //       .catch((error) => console.error("Error reading from file:", error));
-  //   }, []);
+  useEffect(() => {
+    fetch("src/assets/about-me.txt")
+      .then((response) => response.text())
+      .then((text) => setFileContent(text))
+      .catch((error) => console.error("Error reading from file:", error));
+  }, []);
 
-  //   const renderParagraphs = (text: string) => {
-  //     return text.split("\n\n").map((paragraph, index) => (
-  //       <p key={index}>
-  //         {paragraph.split("\n").map((line, lineIndex) => (
-  //           <React.Fragment key={lineIndex}>
-  //             {line}
-  //             <br />
-  //           </React.Fragment>
-  //         ))}
-  //       </p>
-  //     ));
-  //   };
+  const renderParagraphs = (text: string) => {
+    return text.split("\n\n").map((paragraph, index) => (
+      <p key={index}>
+        {paragraph.split("\n").map((line, lineIndex) => (
+          <React.Fragment key={lineIndex}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
+      </p>
+    ));
+  };
 
   return (
     <>
@@ -31,8 +31,8 @@ const About: React.FC = () => {
           <div className="col m-5">
             <h2 className="accent-color-1 mb-4">Hey, it's nice to meet you</h2>
             <div className="section-box p-3">
-              {/* <p>{renderParagraphs(fileContent)}</p> */}
-              <p>
+              <p>{renderParagraphs(fileContent)}</p>
+              {/* <p>
                 I'm a full-stack web developer who loves to solve puzzles. As a
                 person who embraces both sides of her brain, I love the way that
                 web design does the same, combining logic and creativity,
@@ -47,7 +47,7 @@ const About: React.FC = () => {
               <p>
                 Keep scrolling to find out what puzzles I've been solving
                 lately.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="col">
