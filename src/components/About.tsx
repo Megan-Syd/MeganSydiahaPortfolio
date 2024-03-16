@@ -5,7 +5,7 @@ const About: React.FC = () => {
   const [fileContent, setFileContent] = useState<string>("");
 
   useEffect(() => {
-    fetch("src/assets/about-me.txt")
+    fetch("../assets/about-me.txt")
       .then((response) => response.text())
       .then((text) => setFileContent(text))
       .catch((error) => console.error("Error reading from file:", error));
