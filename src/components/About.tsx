@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HeadshotImg from "../assets/casual-headshot.png";
+import HeadshotImg from "/assets/casual-headshot.png";
 
 const About: React.FC = () => {
   const [fileContent, setFileContent] = useState<string>("");
