@@ -2,7 +2,7 @@
 
 const ViewPDF = () => {
   const openPdf = () => {
-    window.open("src/assets/MeganSydiahaCV032024.pdf", "_blank");
+    window.open("/assets/MeganSydiahaCV.pdf", "_blank");
   };
 
   return (
