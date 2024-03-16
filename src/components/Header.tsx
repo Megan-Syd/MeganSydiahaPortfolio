@@ -6,7 +6,7 @@ const Header = () => {
   const sections = [
     { id: "about-section", name: "About me" },
     { id: "projects-section", name: "Projects" },
-    { id: "languages-section", name: "Languages" },
+    { id: "languages-section", name: "Technologies" },
     { id: "contact-section", name: "Contact" },
   ];
 
