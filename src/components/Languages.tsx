@@ -11,6 +11,10 @@ import PhpIcon from "/assets/language_icons/php.svg";
 import PythonIcon from "/assets/language_icons/python.svg";
 import SpringIcon from "/assets/language_icons/spring-icon.svg";
 import TSIcon from "/assets/language_icons/typescript-icon.svg";
+import LaravelIcon from "/assets/language_icons/github.svg";
+import PostmanIcon from "/assets/language_icons/postman.svg";
+import GithubIcon from "/assets/language_icons/github.svg";
+import ChakraIcon from "/assets/language_icons/chakra.svg";
 
 const Languages = () => {
   const icons = [
@@ -26,6 +30,10 @@ const Languages = () => {
     DotNetIcon,
     SpringIcon,
     MySqlIcon,
+    LaravelIcon,
+    PostmanIcon,
+    GithubIcon,
+    ChakraIcon,
   ];
 
   return (
