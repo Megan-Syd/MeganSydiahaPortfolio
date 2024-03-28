@@ -31,10 +31,10 @@ const Languages = () => {
     LaravelIcon,
     PostmanIcon,
     MySqlIcon,
-    ChakraIcon,
     HtmlIcon,
     CssIcon,
     BootstrapIcon,
+    ChakraIcon,
     GithubIcon,
   ];
 
