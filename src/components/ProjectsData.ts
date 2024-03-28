@@ -7,6 +7,7 @@ const projectsData = [
     technologies: "React, Chakra",
     link: "https://example.com/project1",
     image: "/assets/project_images/met-api-1.PNG",
+    date: "01/2024",
   },
   {
     name: "Dice Game",
@@ -15,15 +16,17 @@ const projectsData = [
     technologies: "Python, Bootstrap",
     link: "https://github.com/Megan-Syd/DiceGame.git",
     image: "/assets/project_images/dice-game-1.PNG",
+    date: "11/2023",
   },
-    {
-      name: "Blog Admin App",
-      description:
-        "This app was a first foray into building a more complex app with the use of Laravel. I love the process of creating database schemas, and I love front-end design, so this project was especially fun. As it was built earlier on, it doesn't have all the functionalities that I dreamed of including, but as I progress in my learning I am excited to delve further into the possibilities of this interesting framework.",
-      technologies: "Laravel, Bootstrap, XAMPP",
-      link: "https://github.com/Megan-Syd/PhpBlogProgram.git",
-      image: "/assets/project_images/php-blog-1.png",
-    },
+  {
+    name: "Blog Admin App",
+    description:
+      "This app was a first foray into building a more complex app with the use of Laravel. I love the process of creating database schemas, and I love front-end design, so this project was especially fun. As it was built earlier on, it doesn't have all the functionalities that I dreamed of including, but as I progress in my learning I am excited to delve further into the possibilities of this interesting framework.",
+    technologies: "Laravel, Bootstrap, XAMPP",
+    link: "https://github.com/Megan-Syd/PhpBlogProgram.git",
+    image: "/assets/project_images/php-blog-1.png",
+    date: "11/2023",
+  },
   // Add more projects as needed
 ];
 
