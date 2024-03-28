@@ -1,6 +1,7 @@
 import React from "react";
 
 interface Project {
+  date: string;
   name: string;
   description: string;
   technologies: string;
@@ -28,6 +29,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           <div className="col section-box p-3">
             <h4 className="accent-color-1">{project.name}</h4>
             <p>{project.description}</p>
+            <p>Date created: {project.date}</p>
             <p>
               <span className="accent-color-1">Languages + Platforms:</span>{" "}
               {project.technologies}
