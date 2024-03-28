@@ -15,6 +15,7 @@ import LaravelIcon from "/assets/language_icons/laravel.svg";
 import PostmanIcon from "/assets/language_icons/postman.svg";
 import GithubIcon from "/assets/language_icons/github.svg";
 import ChakraIcon from "/assets/language_icons/chakra.svg";
+import BootstrapIcon from "/assets/language_icons/bootstrap.svg";
 
 const Languages = () => {
   const icons = [
@@ -24,16 +25,17 @@ const Languages = () => {
     PhpIcon,
     JSIcon,
     TSIcon,
-    HtmlIcon,
-    CssIcon,
     ReactIcon,
     DotNetIcon,
     SpringIcon,
-    MySqlIcon,
     LaravelIcon,
     PostmanIcon,
-    GithubIcon,
+    MySqlIcon,
     ChakraIcon,
+    HtmlIcon,
+    CssIcon,
+    BootstrapIcon,
+    GithubIcon,
   ];
 
   return (
