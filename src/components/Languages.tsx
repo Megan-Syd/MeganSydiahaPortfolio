@@ -54,7 +54,7 @@ const Languages = () => {
       <div id="languages-section" className="container m-5">
         <h2 className="accent-color-1 m-5">Languages and frameworks</h2>
         <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 m-5 p-4 section-box text-center">
-          {iconsData.map(({ icon, name }, index) => (
+          {iconsData.map(({ icon }, index) => (
             <div className="col" key={index}>
               {/* <div
                 className="position-relative"
