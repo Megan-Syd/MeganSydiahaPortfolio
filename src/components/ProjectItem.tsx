@@ -16,9 +16,9 @@ interface ProjectItemProps {
 const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   return (
     <>
-      <div className="project-item m-5">
+      <div className="project-item container">
         <div className="row align-items-center">
-          <div className="col">
+          <div className="col-md d-flex flex-column">
             <img
               className="section-box"
               src={project.image}
@@ -26,7 +26,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               style={{ maxHeight: "300px", maxWidth: "auto" }}
             />
           </div>
-          <div className="col section-box p-3">
+          <div className="col-md d-flex flex-column section-box my-3 p-3">
             <h4 className="accent-color-1">{project.name}</h4>
             <p>{project.description}</p>
             <p>

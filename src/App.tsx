@@ -1,9 +1,9 @@
-import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Languages from "./components/Languages";
 import Contact from "./components/Contact";
+import "./App.css";
 
 function App() {
   return (

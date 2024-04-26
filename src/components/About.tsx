@@ -28,14 +28,14 @@ const About: React.FC = () => {
     <>
       <div id="about-section" className="container m-5">
         <div className="row">
-          <div className="col col-md col-sm-12 m-5">
+          <div className="col-md d-flex flex-column justify-content-between">
             <h2 className="accent-color-1 mb-4">Hey, it's nice to meet you</h2>
             <div className="section-box p-3">
               <p>{renderParagraphs(fileContent)}</p>
             </div>
           </div>
-          <div className="col col-md col-sm-12">
-            <div className=" circular-image-container">
+          <div className="col-md d-flex justify-content-center m-3">
+            <div className=" circular-image-container d-flex align-items-center justify-content-center">
               <img
                 src={HeadshotImg}
                 alt="Headshot"
