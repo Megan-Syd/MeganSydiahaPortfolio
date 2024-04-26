@@ -25,6 +25,7 @@ const Header = () => {
 
   const handleLinkClick = (sectionId: string) => {
     scrollToSection(sectionId);
+    setMenuOpen(false);
   };
 
   const handleTitleClick = () => {
@@ -34,24 +35,24 @@ const Header = () => {
 
   return (
     <>
-      <Container className="header d-flex justify-content-between align-items-center sticky-top">
-        <Navbar id="home-section" expand="md">
-          <h4
-            className="text-left accent-color-1 main-title"
-            onClick={handleTitleClick}
-            style={{ cursor: "pointer" }}
-          >
-            Megan Sydiaha | Web Developer
-          </h4>
+      <Container className="header d-flex justify-content-between sticky-top">
+        <h4
+          className="text-left accent-color-1 main-title"
+          onClick={handleTitleClick}
+          style={{ cursor: "pointer" }}
+        >
+          Megan Sydiaha | Web Developer
+        </h4>
+        <Navbar id="home-section" expand="md" className="ml-auto">
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={() => setMenuOpen(!menuOpen)}
           />
           <Navbar.Collapse
             id="basic-navbar-nav"
-            className={`align-items-end ${menuOpen ? "show" : ""}`}
+            className={menuOpen ? "show" : ""}
           >
-            <Nav className={menuOpen ? "flex-column" : ""}>
+            <Nav className={`align-items-end ${menuOpen ? "flex-column" : ""}`}>
               {sections.map((section, index) => (
                 <a
                   href={`#${section.id}`}
