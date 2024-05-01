@@ -5,7 +5,7 @@ const projectsData = [
     description:
       "This React project was a collaborative work between myself and two of my classmates. Our challenge was to make use of a public API through Typescript React, and display the provided data with Chakra UI. Through this project I was able to learn about lots of the cool UI secrets I've seen and admired online, but hadn't yet been able to execute. ",
     technologies: "React, Chakra",
-    link: "https://example.com/project1",
+    link: "https://github.com/EricSadowski/ReactApiProject.git",
     image: "/assets/project_images/met-api-1.PNG",
     date: "01/2024",
   },

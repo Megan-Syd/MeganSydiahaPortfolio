@@ -31,7 +31,7 @@ const About: React.FC = () => {
           <div className="col-md d-flex flex-column justify-content-between">
             <h2 className="accent-color-1 mb-4">Hey, it's nice to meet you</h2>
             <div className="section-box p-3">
-              <p>{renderParagraphs(fileContent)}</p>
+              <div>{renderParagraphs(fileContent)}</div>
             </div>
           </div>
           <div className="col-md d-flex justify-content-center m-3">

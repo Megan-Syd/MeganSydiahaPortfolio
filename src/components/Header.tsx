@@ -3,15 +3,26 @@ import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-const Header = () => {
+const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((menuOpen) => !menuOpen);
+    console.log("Toggling menu");
+  };
+
+  // const closeMenu = () => {
+  //   if (menuOpen) {
+  //     setMenuOpen(() => false);
+  //   }
+  // };
+
   const sections = [
     { id: "about-section", name: "About me" },
     { id: "projects-section", name: "Projects" },
     { id: "languages-section", name: "Technologies" },
     { id: "contact-section", name: "Contact" },
   ];
-
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -20,7 +31,6 @@ const Header = () => {
       const offsetTop = section.offsetTop - headerHeight;
       window.scrollTo({ top: offsetTop, behavior: "smooth" });
     }
-    setMenuOpen(false);
   };
 
   const handleLinkClick = (sectionId: string) => {
@@ -43,19 +53,24 @@ const Header = () => {
         >
           Megan Sydiaha | Web Developer
         </h4>
-        <Navbar id="home-section" expand="md" className="ml-auto">
+        <Navbar
+          id="home-section"
+          expand="md"
+          className="ml-auto"
+          expanded={menuOpen}
+        >
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={toggleMenu}
           />
           <Navbar.Collapse
             id="basic-navbar-nav"
-            className={menuOpen ? "show" : ""}
+            // className={menuOpen ? "show" : ""}
           >
             <Nav className={`align-items-end ${menuOpen ? "flex-column" : ""}`}>
               {sections.map((section, index) => (
                 <a
-                  href={`#${section.id}`}
+                  // href={`#${section.id}`}
                   className="px-3"
                   key={index}
                   onClick={() => handleLinkClick(section.id)}
