@@ -21,6 +21,7 @@ const Contact = () => {
             <a
               className="link-dark link-underline link-underline-opacity-0"
               href="mailto:sydiaha.megan@gmail.com"
+              title="Email address"
             >
               <FontAwesomeIcon
                 icon={faEnvelope}
@@ -41,6 +42,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/megansydiaha/"
               target="_blank"
               rel="noopener noreferrer"
+              title="LinkedIn profile"
             >
               <FontAwesomeIcon icon={faLinkedin} className="icon me-2" />
             </a>
@@ -48,6 +50,7 @@ const Contact = () => {
               href="https://github.com/Megan-Syd"
               target="_blank"
               rel="noopener noreferrer"
+              title="Github profile"
             >
               <FontAwesomeIcon icon={faSquareGithub} className="icon" />
             </a>

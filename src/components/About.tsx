@@ -42,6 +42,7 @@ const About: React.FC = () => {
               <img
                 src={HeadshotImg}
                 alt="Headshot"
+                title="Headshot"
                 className="circular-image"
               />
             </div>

@@ -73,7 +73,6 @@ const Header: React.FC = () => {
           >
             <FontAwesomeIcon icon={menuOpen ? faX : faBars} />
           </Navbar.Toggle>
-
           <Navbar.Collapse
             id="basic-navbar-nav"
             // className={menuOpen ? "show" : ""}
@@ -83,6 +82,8 @@ const Header: React.FC = () => {
                 <a
                   className="px-3"
                   key={index}
+                  title={section.name}
+                  style={{ cursor: "pointer" }}
                   onClick={() => handleLinkClick(section.id)}
                 >
                   {section.name}

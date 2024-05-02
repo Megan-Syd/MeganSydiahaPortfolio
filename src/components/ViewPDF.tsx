@@ -14,6 +14,7 @@ const ViewPDF = () => {
           borderWidth: "medium",
           color: "#6b8093",
         }}
+        title="View CV in browser"
         onClick={openPdf}
       >
         View my CV

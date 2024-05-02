@@ -23,6 +23,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               className="section-box"
               src={project.image}
               alt={project.name}
+              title={project.name}
               style={{ maxHeight: "300px", maxWidth: "auto" }}
             />
           </div>
