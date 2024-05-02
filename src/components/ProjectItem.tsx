@@ -34,7 +34,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               {project.date}
             </p>
             <p>
-              <span className="accent-color-1">Languages + Platforms:</span>{" "}
+              <span className="accent-color-1">Technologies used: </span>
               {project.technologies}
             </p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
