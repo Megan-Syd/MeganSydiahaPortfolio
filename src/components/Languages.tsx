@@ -16,9 +16,11 @@ import PostmanIcon from "/assets/language_icons/postman.svg";
 import GithubIcon from "/assets/language_icons/github.svg";
 import ChakraIcon from "/assets/language_icons/chakra.svg";
 import BootstrapIcon from "/assets/language_icons/bootstrap.svg";
-// import { useState } from "react";
+import { useState } from "react";
 
-const Languages = () => {
+const Languages: React.FC = () => {
+  const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
+
   const iconsData = [
     { icon: JavaIcon, name: "Java" },
     { icon: CSharpIcon, name: "C#" },
@@ -39,41 +41,30 @@ const Languages = () => {
     { icon: GithubIcon, name: "GitHub" },
   ];
 
-  // const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
-
-  // const handleMouseEnter = (iconName: string) => {
-  //   setHoveredIcon(iconName);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setHoveredIcon(null);
-  // };
-
   return (
     <>
       <div id="languages-section" className="container m-md-5 my-sm-5">
         <h2 className="accent-color-1 mb-4">Technologies</h2>
         <div className="d-flex flex-wrap justify-content-center align-items-center p-4 section-box text-center">
-          {iconsData.map(({ icon }, index) => (
-            <div className="col" key={index}>
-              {/* <div
-                className="position-relative"
-                onMouseEnter={() => handleMouseEnter(name)}
-                onMouseLeave={handleMouseLeave}
-              > */}
+          {iconsData.map(({ icon, name }, index) => (
+            <div
+              className="custom-icon zoom-on-hover position-relative"
+              key={index}
+              onMouseEnter={() => setHoveredIcon(name)}
+              onMouseLeave={() => setHoveredIcon(null)}
+            >
               <img
-                className="m-5 zoom-on-hover"
+                className="m-5"
                 style={{ maxWidth: "80px", maxHeight: "80px" }}
                 src={icon}
-                alt={iconsData[index].name}
-                title={iconsData[index].name}
+                alt={name}
+                title={name}
               />
-              {/* {hoveredIcon === name && (
-                  <div className="position-absolute top-50 start-50 translate-middle badge bg-dark">
-                    {name}
-                  </div>
-                )}
-              </div> */}
+              {hoveredIcon === name && (
+                <span className="icon-name bg-white bg-opacity-75 p-2 rounded position-absolute start-50 translate-middle">
+                  {name}
+                </span>
+              )}
             </div>
           ))}
         </div>
