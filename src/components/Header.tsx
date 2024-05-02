@@ -45,7 +45,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <Container className="header d-flex justify-content-between sticky-top">
+      <Container className="header container-fluid d-flex justify-content-between sticky-top">
         <h4
           className="text-left accent-color-1 main-title"
           onClick={handleTitleClick}

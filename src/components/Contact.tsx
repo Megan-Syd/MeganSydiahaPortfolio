@@ -14,7 +14,7 @@ const Contact = () => {
       >
         <div className="row m-5">
           <div className="col-5">
-            <h2 className="accent-color-1 m-5">Let's work together</h2>
+            <h2 className="accent-color-1 my-5">Let's work together</h2>
           </div>
           <div className="col">
             <h5 className="accent-color-1">Drop me a line</h5>

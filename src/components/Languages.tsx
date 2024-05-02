@@ -51,9 +51,9 @@ const Languages = () => {
 
   return (
     <>
-      <div id="languages-section" className="container m-5">
+      <div id="languages-section" className="container m-md-5 my-sm-5">
         <h2 className="accent-color-1 mb-4">Technologies</h2>
-        <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 p-4 section-box text-center">
+        <div className="d-flex flex-wrap justify-content-center align-items-center p-4 section-box text-center">
           {iconsData.map(({ icon }, index) => (
             <div className="col" key={index}>
               {/* <div
@@ -62,7 +62,7 @@ const Languages = () => {
                 onMouseLeave={handleMouseLeave}
               > */}
               <img
-                className="m-4 zoom-on-hover"
+                className="m-5 zoom-on-hover"
                 style={{ maxWidth: "80px", maxHeight: "80px" }}
                 src={icon}
                 alt={icon.split("/").pop()?.split(".")[0]}

@@ -26,7 +26,10 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div id="about-section" className="container m-5">
+      <div
+        id="about-section"
+        className="container m-md-5 my-sm-5 align-items-center"
+      >
         <div className="row">
           <div className="col-md d-flex flex-column justify-content-between">
             <h2 className="accent-color-1 mb-4">Hey, it's nice to meet you</h2>
@@ -34,7 +37,7 @@ const About: React.FC = () => {
               <div>{renderParagraphs(fileContent)}</div>
             </div>
           </div>
-          <div className="col-md d-flex justify-content-center m-3">
+          <div className="col-md d-flex justify-content-center mt-3">
             <div className=" circular-image-container d-flex align-items-center justify-content-center">
               <img
                 src={HeadshotImg}
