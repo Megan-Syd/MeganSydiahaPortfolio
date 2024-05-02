@@ -65,8 +65,8 @@ const Languages = () => {
                 className="m-5 zoom-on-hover"
                 style={{ maxWidth: "80px", maxHeight: "80px" }}
                 src={icon}
-                alt={icon.split("/").pop()?.split(".")[0]}
-                title={icon.split("/").pop()?.split(".")[0]}
+                alt={iconsData[index].name}
+                title={iconsData[index].name}
               />
               {/* {hoveredIcon === name && (
                   <div className="position-absolute top-50 start-50 translate-middle badge bg-dark">
