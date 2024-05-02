@@ -10,11 +10,11 @@ function App() {
     <>
       <Header />
       <About />
-      <hr className="accent-color-1" />
+      <hr className="accent-color-1 mx-4" />
       <Projects />
-      <hr className="accent-color-1" />
+      <hr className="accent-color-1 mx-4" />
       <Languages />
-      <hr className="accent-color-1" />
+      <hr className="accent-color-1 mx-4" />
       <Contact />
     </>
   );
