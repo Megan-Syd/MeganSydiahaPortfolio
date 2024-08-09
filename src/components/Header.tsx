@@ -40,7 +40,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <Container className="header container-fluid my-3 d-flex justify-content-between">
+      <Container className="header d-flex justify-content-between">
         <h4
           className="text-left accent-color-1 main-title"
           onClick={handleTitleClick}
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
           </Navbar.Collapse>
         </Navbar>
       </Container>
-    </>
+      </>
   );
 };
 

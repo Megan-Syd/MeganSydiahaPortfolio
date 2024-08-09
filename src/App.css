@@ -46,22 +46,24 @@
 }
 
 .header {
-  background-color: #faeee7;
+  background-color: inherit;
   border-style: dashed;
   border-width: medium;
   border-color: #da879c;
   border-radius: 5px;
   padding: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .circular-image-container {
-  width: 400px; /* Adjust size as needed */
-  height: 400px; /* Adjust size as needed */
+  width: 400px;
+  height: 400px;
   overflow: hidden;
-  border-radius: 50%; /*This will make the container circular */
+  border-radius: 50%;
   position: relative;
   border-color: #da879c;
   border-width: medium;
