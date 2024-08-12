@@ -16,6 +16,10 @@ import PostmanIcon from "/assets/language_icons/postman.svg";
 import GithubIcon from "/assets/language_icons/github.svg";
 import ChakraIcon from "/assets/language_icons/chakra.svg";
 import BootstrapIcon from "/assets/language_icons/bootstrap.svg";
+import StyledComponentsIcon from "/assets/language_icons/styled-components.svg";
+import MaterialUIIcon from "/assets/language_icons/materialui.svg";
+import NextJSIcon from "/assets/language_icons/next-js.svg";
+import StorybookIcon from "/assets/language_icons/storybook.svg";
 import { useState } from "react";
 
 const Languages: React.FC = () => {
@@ -29,6 +33,7 @@ const Languages: React.FC = () => {
     { icon: JSIcon, name: "JavaScript" },
     { icon: TSIcon, name: "TypeScript" },
     { icon: ReactIcon, name: "React" },
+    { icon: NextJSIcon, name: "Next.js" },
     { icon: DotNetIcon, name: ".NET" },
     { icon: SpringIcon, name: "Spring" },
     { icon: LaravelIcon, name: "Laravel" },
@@ -38,6 +43,9 @@ const Languages: React.FC = () => {
     { icon: CssIcon, name: "CSS" },
     { icon: BootstrapIcon, name: "Bootstrap" },
     { icon: ChakraIcon, name: "Chakra" },
+    { icon: StyledComponentsIcon, name: "Styled Components" },
+    { icon: MaterialUIIcon, name: "Material UI" },
+    { icon: StorybookIcon, name: "Storybook" },
     { icon: GithubIcon, name: "GitHub" },
   ];
 
