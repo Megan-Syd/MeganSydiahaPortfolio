@@ -32,7 +32,7 @@ const About: React.FC = () => {
       >
         <div className="row">
           <div className="col-md d-flex flex-column justify-content-between">
-            <h2 className="accent-color-1 mb-4">Hey, it's nice to meet you</h2>
+            <h2 className="accent-color-1 py-4">Hey, it's nice to meet you</h2>
             <div className="section-box p-3">
               <div>{renderParagraphs(fileContent)}</div>
             </div>

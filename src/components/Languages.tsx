@@ -52,7 +52,7 @@ const Languages: React.FC = () => {
   return (
     <>
       <div id="languages-section" className="container m-md-5 my-sm-5">
-        <h2 className="accent-color-1 mb-4">Technologies</h2>
+        <h2 className="accent-color-1 py-4">Technologies</h2>
         <div className="d-flex flex-wrap justify-content-center align-items-center p-4 section-box text-center">
           {iconsData.map(({ icon, name }, index) => (
             <div
