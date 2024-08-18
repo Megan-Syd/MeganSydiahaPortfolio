@@ -38,9 +38,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               <span className="accent-color-1">Technologies used: </span>
               {project.technologies}
             </p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              See it on GitHub
-            </a>
+            {project.link && (
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                See it on GitHub
+              </a>
+            )}
           </div>
         </div>
       </div>
