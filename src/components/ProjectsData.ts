@@ -6,7 +6,7 @@ const projectsData = [
       "Over the course of two months I apprenticed with a small team of developers to begin work on a registration software for swing dance events. I worked on the front-end of the app, recreating a pre-existing app's UI with Material UI and Styled Components, and building the behaviour with Next.js and the react-hook-form library. The apprenticeship experience gave me valuable insight into the daily life of a professional developer working on a team, an introduction to several interesting technologies, and confirmed that I have the skills and understanding to enter the workforce.",
     technologies: "Next.js, Material UI, Styled Components, GraphQL",
     // link: "",
-    image: "/assets/project_images/met-api-1.PNG",
+    image: "/assets/project_images/timestep-screenshot.png",
     date: "05/2024 - 07/2024",
   },
   {
