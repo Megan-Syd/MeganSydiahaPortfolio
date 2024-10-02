@@ -1,8 +1,8 @@
-import Header from "./components/Header";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Languages from "./components/Languages";
-import Contact from "./components/Contact";
+import Header from "./sections/Header";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Languages from "./sections/Languages";
+import Contact from "./sections/Contact";
 import "./App.css";
 import { Helmet } from "react-helmet";
 
