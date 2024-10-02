@@ -21,6 +21,7 @@ import MaterialUIIcon from "/assets/language_icons/materialui.svg";
 import NextJSIcon from "/assets/language_icons/next-js.svg";
 import StorybookIcon from "/assets/language_icons/storybook.svg";
 import { useState } from "react";
+import SectionContainer from "../components/SectionContainer";
 
 const Languages: React.FC = () => {
   const [hoveredIcon, setHoveredIcon] = useState<string | null>(null);
@@ -50,34 +51,47 @@ const Languages: React.FC = () => {
   ];
 
   return (
-    <>
-      <div id="languages-section" className="container m-md-5 my-sm-5">
-        <h2 className="accent-color-1 py-4">Technologies</h2>
-        <div className="d-flex flex-wrap justify-content-center align-items-center p-4 section-box text-center">
-          {iconsData.map(({ icon, name }, index) => (
-            <div
-              className="custom-icon zoom-on-hover position-relative"
-              key={index}
-              onMouseEnter={() => setHoveredIcon(name)}
-              onMouseLeave={() => setHoveredIcon(null)}
-            >
-              <img
-                className="m-5"
-                style={{ maxWidth: "80px", maxHeight: "80px" }}
-                src={icon}
-                alt={name}
-                title={name}
-              />
-              {hoveredIcon === name && (
-                <span className="icon-name bg-white bg-opacity-75 p-2 rounded position-absolute start-50 translate-middle">
-                  {name}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
+    <SectionContainer id="languages-section" title="Technologies">
+      <div
+        className="d-flex 
+      flex-wrap 
+      justify-content-center 
+      align-items-center 
+      p-4 
+      section-box 
+      text-center"
+      >
+        {iconsData.map(({ icon, name }, index) => (
+          <div
+            className="custom-icon zoom-on-hover position-relative"
+            key={index}
+            onMouseEnter={() => setHoveredIcon(name)}
+            onMouseLeave={() => setHoveredIcon(null)}
+          >
+            <img
+              className="m-5"
+              style={{ maxWidth: "80px", maxHeight: "80px" }}
+              src={icon}
+              alt={name}
+              title={name}
+            />
+            {hoveredIcon === name && (
+              <span
+                className="icon-name 
+              bg-white 
+              bg-opacity-75 
+              p-2 rounded 
+              position-absolute 
+              start-50 
+              translate-middle"
+              >
+                {name}
+              </span>
+            )}
+          </div>
+        ))}
       </div>
-    </>
+    </SectionContainer>
   );
 };
 

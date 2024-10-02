@@ -1,22 +1,16 @@
-// import React from "react";
-import projectsData from "./ProjectsData";
-import ProjectItem from "./ProjectItem";
+import projectsData from "../data/ProjectsData";
+import ProjectItem from "../components/ProjectItem";
+import SectionContainer from "../components/SectionContainer";
 
 const Projects = () => {
   return (
-    <>
-      <div
-        id="projects-section"
-        className="container m-md-5 my-sm-5 align-items-center justify-content-center"
-      >
-        <h2 className="accent-color-1 py-4">Here's what I've been doing</h2>
-        <div>
-          {projectsData.map((project, index) => (
-            <ProjectItem key={index} project={project} />
-          ))}
-        </div>
+    <SectionContainer id="projects-section" title="Here's what I've been doing">
+      <div>
+        {projectsData.map((project, index) => (
+          <ProjectItem key={index} project={project} />
+        ))}
       </div>
-    </>
+    </SectionContainer>
   );
 };
 

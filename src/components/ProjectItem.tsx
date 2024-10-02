@@ -1,4 +1,5 @@
 import React from "react";
+import SubHeader from "./SubHeader";
 
 interface Project {
   date: string;
@@ -28,7 +29,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             />
           </div>
           <div className="col-md d-flex flex-column section-box my-3 p-3">
-            <h4 className="accent-color-1">{project.name}</h4>
+            <SubHeader title={project.name}></SubHeader>
             <p>{project.description}</p>
             <p>
               <span className="accent-color-1">Date created: </span>

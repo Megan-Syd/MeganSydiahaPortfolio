@@ -4,6 +4,7 @@ import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 import ViewPDF from "../components/ViewPDF";
+import SubHeader from "../components/SubHeader";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
             <h2 className="accent-color-1 my-5">Let's work together</h2>
           </div>
           <div className="col">
-            <h5 className="accent-color-1">Drop me a line</h5>
+            <SubHeader title="Drop me a line" />
             <a
               className="link-dark link-underline link-underline-opacity-0"
               href="mailto:sydiaha.megan@gmail.com"
@@ -37,7 +38,7 @@ const Contact = () => {
               />
               306-260-2727
             </p>
-            <h5 className="accent-color-1 mt-4">Follow me here</h5>
+            <SubHeader title="Follow me here" />
             <a
               href="https://www.linkedin.com/in/megansydiaha/"
               target="_blank"

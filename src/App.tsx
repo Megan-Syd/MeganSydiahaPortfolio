@@ -3,8 +3,9 @@ import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Languages from "./sections/Languages";
 import Contact from "./sections/Contact";
-import "./App.css";
+import "./styles/App.css";
 import { Helmet } from "react-helmet";
+import SectionDivider from "./components/SectionDivider";
 
 function App() {
   return (
@@ -32,11 +33,11 @@ function App() {
       </Helmet>
       <Header />
       <About />
-      <hr className="accent-color-1 mx-4" />
+      <SectionDivider />
       <Projects />
-      <hr className="accent-color-1 mx-4" />
+      <SectionDivider />
       <Languages />
-      <hr className="accent-color-1 mx-4" />
+      <SectionDivider />
       <Contact />
     </>
   );
